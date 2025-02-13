@@ -10,6 +10,7 @@
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
               <a href="/" class="<?= isurl('/')?'bg-gray-900  text-blue-300': 'bg-gray-100'?>rounded-md px-3 py-2 text-sm font-medium text-white" aria-current="page">home</a>
               <a href="/about" class=" <?= isurl('/about')?'bg-gray-900  text-blue-300': 'bg-gray-100'?>rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white">about</a>
+              <a href="/notes" class=" <?= isurl('/notes')?'bg-gray-900  text-blue-300': 'bg-gray-100'?>rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white">notes</a>
               <a href="/contact" class="<?= isurl('/contact')?'bg-gray-900  text-blue-300': 'bg-gray-100'?> rounded-md px-3 py-2 text-sm font-medium text-gray-300  hover:text-white">contact</a>
               <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
               <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Reports</a>

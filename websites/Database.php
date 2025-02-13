@@ -7,7 +7,7 @@ class Database{
 
      
         $dsn = 'mysql:'. http_build_query($config,'',';');
-        echo $dsn;
+        // echo $dsn;
         // $dsn = "mysql:host={$config['host']};port={$config['port']};dbname={$config['dbname']};user={$config['user']};";
         $this->connection = new PDO($dsn,$username,$password,[
             PDO::ATTR_DEFAULT_FETCH_MODE=>PDO::FETCH_ASSOC
@@ -16,10 +16,10 @@ class Database{
     
 
 
-    public function query($query){
+    public function query($query,$params=[]){
     
         $statement = $this->connection->prepare($query);
-        $statement->execute();
+        $statement->execute($params);
 
         $notes= $statement->fetchAll();
         return $notes;

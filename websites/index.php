@@ -1,8 +1,6 @@
 <?php
 
-// require "./functions.php";
- 
-// require "./router.php";
+
 
 //connect with mysql datbase
 
@@ -25,24 +23,30 @@
 // $dsn = 
 // new PDO($dsn)
 
-
+require "./functions.php";
 require "Database.php";
+require "./router.php";
 
-$config = require "config.php";
+
+// $config = require "config.php";
+// $db = new Database($config);
 // $config = [
 //     'host'=>'localhost',
 //     'port'=>'3306',
 //     'dbname'=>'dairy',
 //     'user'=>'root'
 // ];
-$db = new Database($config);
-$data = $db->query('select * from notes');
-// var_dump($data);
 
-foreach($data as $d)
-{
-    echo "<li>". $d['name']."</li>";
-}
+// $id = $_GET['id'];
+//WHERE id = ?
+// $query = "SELECT * FROM notes "; 
+// $data = $db->query($query);//[$id]
+// var_dump($data); 
+
+// foreach($data as $d)
+// {
+//     echo "<li>". $d['body']."</li>";
+// }
 
 // $data1 =  implode(",", $data);
 // foreach($data as $dd1)
